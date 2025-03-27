@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.title }} Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+<h1>{{ movie.title }}</h1>
+<h3>Actors:</h3>
+<ul>
+    {% for actor in movie.actors %}
+    <li>
+        <a href="{{ url_for('actor_details', actor_id=actor.id) }}">{{ actor.name }} {{ actor.surname }}</a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="/">Back to Search</a>
+</body>
+</html>

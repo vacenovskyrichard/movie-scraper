@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for better alignment */
+.container {
+    max-width: 800px;
+    width: 90%;
+    background-color: #252525;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    color: #ffcc00;
+}
+
+/* Form */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background-color: #444;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e6b800;
+    text-decoration: underline;
+}
+
+/* Back to Search */
+a[href="/"] {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
